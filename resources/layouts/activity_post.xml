@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:isScrollContainer="false">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context="app.com.stapp.PostActivity">
+
+
+        <ImageButton
+            android:id="@+id/imageSelect"
+            android:layout_width="wrap_content"
+            android:layout_height="210dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:adjustViewBounds="true"
+            android:background="@drawable/input_outline"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/add_btn" />
+
+        <EditText
+            android:id="@+id/titleField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageSelect"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/input_outline"
+            android:ems="10"
+            android:hint="Positional Call Post Title..."
+            android:inputType="textPersonName"
+            android:padding="13dp" />
+
+
+        <EditText
+            android:id="@+id/descField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titleField"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/input_outline"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="Positional Call Post Details..."
+            android:inputType="textMultiLine"
+            android:minLines="6"
+            android:padding="16dp"
+            android:paddingBottom="20dp"
+            android:scrollbars="vertical" />
+
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="18dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="200dp"
+            android:background="@drawable/btn_outline"
+            android:padding="10dp"
+            android:text="Post Positional Tips"
+            android:textColor="#ffff"
+            tools:ignore="NotSibling" />
+
+    </RelativeLayout>
+
+</ScrollView>
